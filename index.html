@@ -12,55 +12,92 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <nav>
-      <div class="topstyles">
-        <div class="topstyles-left">
+    <div class="wrapper">
+      <header>
+        <div class="header-left">
           <div class="logo-area">
             <div id="logo">Nintendon't®️</div>
           </div>
           <div class="searchbar">
             <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-            <input />
+            <input
+              type="text"
+              placeholder="Search games, hardware, news, etc."
+            />
+            <select name="categories">
+              <option value="">All categories</option>
+              <option value="games">Games</option>
+              <option value="hardware">Hardware</option>
+              <option value="merchandise">Merchandise</option>
+              <option value="news-and-events">News & Events</option>
+              <option value="support">Support</option>
+            </select>
           </div>
         </div>
-        <div class="topstyles-right">
-          <div class="button">
+        <ul class="header-right">
+          <li>
             <button>
-              <i class="fa-solid fa-circle-question fa-lg"></i> Support
+              <i class="fa-solid fa-circle-question fa-lg"></i>
+              <a href="">Support</a>
             </button>
-          </div>
-          <div class="button">
+          </li>
+          <li>
             <button>
-              <i class="fa-solid fa-heart fa-lg"></i> Wish List
+              <i class="fa-solid fa-heart fa-lg"></i>
+              <a href="">Wish List</a>
             </button>
-          </div>
-          <div class="button">
+          </li>
+          <li>
             <button>
-              <i class="fa-solid fa-cart-shopping fa-lg"></i> Cart
+              <i class="fa-solid fa-cart-shopping fa-lg"></i>
+              <a href="">Cart</a>
             </button>
-          </div>
-          <div class="button">
+          </li>
+          <li>
             <button>
-              <i class="fa-solid fa-user fa-lg"></i> Log in / Sign up
+              <i class="fa-solid fa-user fa-lg"></i>
+              <span>Log in / Sign up</span>
             </button>
-          </div>
+          </li>
+        </ul>
+      </header>
+      <nav>
+        <ul>
+          <li>
+            <button>
+              <i class="fa-brands fa-square-font-awesome fa-lg"></i> My Nintendo Store<i class="fa-solid fa-angle-down fa-lg"></i>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fa-solid fa-plus fa-xl"></i> Games<i class="fa-solid fa-angle-down fa-lg"></i>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fa-solid fa-gamepad fa-lg"></i> Nintendo Switch<i class="fa-solid fa-angle-down fa-lg"></i>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fa-solid fa-message fa-lg"></i> News & Events
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fa-solid fa-star fa-lg"></i> Play Nintendo<i class="fa-solid fa-angle-down fa-lg"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="image-wrapper">
+          <img
+            src="images/mario_kart.jpeg"
+            alt="An AI generated image of many Marios driving karts on Rainbow Road"
+          />
         </div>
-      </div>
-      <div class="bottomstyles">
-        <button>My Nintendo Store</button>
-        <button>Games</button>
-        <button>Nintendo Switch</button>
-        <button>News & Events</button>
-        <button>Play Nintendo</button>
-      </div>
-    </nav>
-    <main>
-      <div class="image-wrapper">
-        <img
-          src="images/mario_kart.jpeg"
-          alt="An AI generated image of many Marios on Rainbow Road in Mario Kart"
-        />
-      </div>
-    </main>
+      </main>
+    </div>
   </body>
 </html>
